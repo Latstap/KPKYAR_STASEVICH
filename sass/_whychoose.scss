@@ -1,0 +1,148 @@
+.why-choose {
+  padding: 7.5rem 10.3125rem 5.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .back {
+    background-color: #131517;
+  }
+
+  .blueblur {
+    height: 42.5rem;
+    filter: blur(5rem);
+    top: 7.5rem;
+    background-color: #1b70f1;
+    opacity: 7%;
+  }
+
+  &__text {
+    margin-top: 1.3125rem;
+    color: white;
+    text-align: center;
+    text-indent: 0.25rem;
+
+
+    .why-choose__title {
+      margin: 0;
+      margin-left: -0.0625rem;
+      font-size: 3.625rem;
+      font-weight: 700;
+      letter-spacing: -0.00625rem;
+      margin-bottom: 1.875rem;
+    }
+
+    .why-choose__description {
+      margin: 0;
+      text-indent: 0.125rem;
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      font-weight: 400;
+      color: #adb3bf;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    width: 99.375rem;
+    gap: 8.375rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      margin: 0;
+      margin-top: 0.625rem;
+      font-size: 3.625rem;
+      font-weight: 400;
+      color: #272a34;
+    }
+  }
+
+  &__point {
+    display: flex;
+    flex-direction: row;
+
+    &-text {
+      margin-top: 0.125rem;
+      width: 27.3125rem;
+      margin-left: 1.3125rem;
+
+      .why-choose__point-title {
+        text-indent: -0.0625rem;
+        margin: 0;
+        color: #adb3bf;
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+
+      .why-choose__point-description {
+        color: #808a9a;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+        text-indent: 0.1875rem;
+        margin: 0;
+        margin-top: 0.9375rem;
+      }
+    }
+
+    &-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.625rem;
+      padding: 0;
+      margin-top: 1.375rem;
+      margin-left: 1.25rem;
+      width: 8.75rem;
+      height: 3rem;
+      border-radius: 0.25rem;
+      border: 0;
+      background-color: rgba(0, 0, 0, 0);
+      font-family: $basic-font;
+      transition: transform 0.3s ease-in-out;
+
+
+      .why-choose__point-button-text {
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: white;
+        padding: 0;
+        width: auto;
+      }
+    }
+    &-button:hover{
+        transform: scale(1.15);
+
+    }
+  }
+
+  &__pointline {
+    margin: 2.4375rem 0 2.5625rem;
+    border: 0.03125rem solid;
+    opacity: 20%;
+    width: 42.1875rem;
+    height: 0;
+    border-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 255, 0.02)
+      )
+      1;
+  }
+
+  &__image {
+    width: 51.25rem;
+    height: 42.625rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

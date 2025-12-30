@@ -1,0 +1,62 @@
+.Whychoose {
+  height: 933px;
+  padding: 0 165px;
+  display: flex;
+  flex-direction: column;
+  background-color: #131517;
+  align-items: center;
+}
+.Whychoose .section_line {
+  margin: 22px 0 48px;
+}
+.Whychoose_text {
+  margin-top: 22px;
+  width: 1050px;
+  color: white;
+  text-align: center;
+}
+.Whychoose_text .text_header {
+  margin-bottom: 30px;
+}
+.Whychoose_text .text_header h1 {
+  margin: 0;
+  margin-left: -1px;
+  font-size: 58px;
+  font-weight: 700;
+  letter-spacing: -0.1px;
+}
+.Whychoose_text p {
+  font-size: 18px;
+  line-height: 28px;
+}
+.Whychoose_text .text_main {
+  margin-bottom: 20px;
+}
+.Whychoose_content {
+  display: flex;
+  flex-direction: row;
+  width: 1590px;
+}
+.Whychoose .list {
+  display: flex;
+  flex-direction: column;
+}
+.Whychoose .list h1 {
+  font-size: 58px;
+  font-weight: 400;
+  color: #272A34;
+}
+.Whychoose .list .point {
+  display: flex;
+  flex-direction: row;
+}
+.Whychoose .list .point h5 {
+  color: #ADB3BF;
+  font-size: 24px;
+  font-weight: 600;
+}
+.Whychoose .list .point p {
+  color: #808A9A;
+  font-size: 16px;
+  font-weight: 400;
+}

@@ -1,0 +1,108 @@
+.header {
+  padding: 2rem 10.313rem;
+  background-color: #1e1f25;
+  width: auto;
+
+  &__navbar {
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+}
+
+.navbar {
+  &__logo {
+    height: 1.5rem;
+  }
+
+  &__vline {
+    margin: 0 2.5rem;
+  }
+
+  &__menu {
+    font-weight: 400;
+    width: 67.5rem;
+    display: flex;
+
+    .menu__list {
+      display: flex;
+      margin-left: 13.688rem;
+      padding-left: 0;
+      list-style: none;
+
+      .menu__item {
+        height: 2.75rem;
+        padding: 0 1.75rem 0 1.125rem;
+        display: flex;
+        align-items: center;
+        font-size: 1.125rem;
+        color: #808a9a;
+        cursor: pointer;
+
+        &--market,
+        &--trade,
+        &--earn,
+        &--about,
+        &--career {
+          position: relative;
+        }
+        &--career {
+          padding-left: 40px;
+        }
+
+        .menu__icon {
+          margin: 1.25rem 1.188rem 1.25rem 0.75rem;
+        }
+      }
+    }
+  }
+
+  &__auth {
+    display: flex;
+    align-items: center;
+    gap: 0.656rem;
+    margin-left: 2.25rem;
+
+    .auth__button {
+      height: 3.5rem;
+      width: 8.75rem;
+      font-weight: 400;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.3s ease-in-out;
+      transition: background 0.3s ease;
+
+      &--login {
+        background-color: transparent;
+        color: #ffffff;
+        border: 0;
+        font-size: 1.125rem;
+      }
+
+      &--signup {
+        background-color: #1b70f1;
+        color: #ffffff;
+        border-radius: 0.25rem;
+        border: 0;
+        font-size: 1.25rem;
+      }
+
+      &--login:hover{
+        transform: scale(1.1);
+      }
+      &--signup:hover {
+        transform: scale(1.05);
+        transition: background-color 0.3s ease-in-out;
+        background-color: #0e5dd4;
+        box-shadow: 0px 0px 15px 1px rgba(255, 255, 255, 0.2);
+      }
+    }
+
+    .auth__text {
+      margin: 0;
+      font-family: "Source Sans Pro", sans-serif;
+    }
+  }
+}

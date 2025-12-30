@@ -1,0 +1,101 @@
+body {
+  font-family: $basic-font;
+  font-size: 1.125rem;
+  margin: 0;
+  padding: 0;
+  background-color: #131517;
+  max-width: 120rem;
+  z-index: -1;
+
+  .container {
+    max-width: 99.375rem;
+    margin: 0 auto;
+  }
+  .container-expanded {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+  .section_line {
+    margin: 3.6875rem 0 3.8125rem;
+    border: 0.03125rem solid;
+    width: 99.3125rem;
+    border-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.1)
+      )
+      1;
+  }
+  button {
+    font-family: $basic-font;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+    color: #adb3bf;
+  }
+  a:hover {
+    text-shadow: 0 0 0.3125rem #ffffff;
+  }
+  h1 {
+    margin: 0;
+    color: white;
+    font-size: 3.625rem;
+    font-weight: 700;
+  }
+  h5 {
+    margin: 0;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.003125rem;
+  }
+  h6 {
+    margin: 0;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+
+  section {
+    position: relative;
+    overflow: hidden;
+  }
+}
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 67.5rem;
+  width: 120rem;
+  overflow: hidden;
+  z-index: -1;
+}
+.back {
+  background-color: inherit;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.noise {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/backgroundnoise.png);
+  opacity: 8%;
+}
+.blueblur {
+  position: absolute;
+  top: 13.75rem;
+  height: 37.5rem;
+  width: 100%;
+  border-radius: 50%;
+  background-color: #1b70f1;
+  opacity: 6%;
+  filter: blur(11.25rem);
+}

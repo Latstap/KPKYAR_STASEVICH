@@ -1,0 +1,159 @@
+.market-trend {
+  padding: 0 10.3125rem 7.5rem;
+  display: flex;
+  flex-direction: column;
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__label {
+    display: flex;
+  }
+
+  &__title {
+    color: white;
+    font-size: 3.625rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  &__tags {
+    width: 38.875rem;
+    display: flex;
+    margin-bottom: 1.125rem;
+  }
+
+  &__list {
+    padding: 0;
+    display: flex;
+    gap: 2.125rem;
+    list-style: none;
+    margin-bottom: 0.5rem;
+  }
+
+  &__item {
+    margin: 0 0 0 0.25rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #808a9a;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  &__item:hover {
+    transform: scale(1.3);
+  }
+
+  &__coins {
+    display: flex;
+    flex-direction: row;
+    gap: 1.875rem;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    margin: 3.6875rem 42.1875rem 0;
+    padding: 0;
+    width: 15rem;
+    height: 3.5rem;
+    border-radius: 0.25rem;
+    background-color: #1b70f1;
+    border: 0;
+    color: white;
+    font-family: $basic-font;
+    font-size: 1.25rem;
+    font-weight: 400;
+    transition: transform 0.5s ease-in-out;
+    transition: background 0.3s ease;
+  }
+  &__button:hover {
+    transform: scale(1.05);
+    transition: background-color 0.3s ease-in-out;
+    background-color: #0e5dd4;
+    box-shadow: 0px 0px 15px 1px rgba(255, 255, 255, 0.2);
+  }
+
+  &__button-text {
+    margin-left: 3rem;
+    margin-right: 0.5rem;
+    padding: 0;
+    width: 7.375rem;
+  }
+}
+
+.coin-banner {
+  display: flex;
+  flex-direction: column;
+  width: 14.75rem;
+  height: 24.125rem;
+  border: 0.125rem #1e1f25 solid;
+  border-radius: 0.625rem;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 5px 10px 2px rgba(255, 255, 255, 0.1) inset;
+  }
+
+  &__head {
+    margin: 0 1.875rem;
+    margin-top: 2.3125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__pair {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: white;
+    text-align: left;
+    margin: 1.125rem 0 1rem;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__changes {
+    font-size: 1rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-right: 0.0625rem;
+
+    p {
+      margin: 0;
+      font-weight: 600;
+      margin-left: 0.4375rem;
+    }
+
+    &--up {
+      color: #06b470;
+    }
+
+    &--down {
+      color: #f74e2c;
+    }
+  }
+
+  &__price {
+    margin: 1.5625rem 1.875rem 1.4375rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__graph {
+    margin: 0 1.75rem 1.25rem;
+  }
+}

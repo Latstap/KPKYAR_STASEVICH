@@ -1,0 +1,136 @@
+.app {
+  padding: 7.5rem 0 0 10.3125rem;
+  .background {
+    left: -0.0625rem;
+    width: 120.0625rem;
+    .blueblur {
+      top: 5rem;
+      left: 62.5rem;
+      width: 59.125rem;
+      height: 32.5rem;
+      border-radius: 50%;
+      background-color: #1b70f1;
+      opacity: 6%;
+      filter: blur(5rem);
+    }
+    .back {
+      background-color: #1e1f25;
+    }
+  }
+
+  &__content {
+    height: 41.25rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3.875rem;
+  }
+
+  &__main {
+    height: 23rem;
+    width: 48.75rem;
+    margin-top: 9.125rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  &__text {
+    .app__title {
+      letter-spacing: -0.00625rem;
+      margin-bottom: 1.875rem;
+      font-size: 3.625rem;
+      font-weight: 700;
+      color: white;
+    }
+
+    .app__description {
+      margin: 0;
+      color: #adb3bf;
+      font-size: 1.125rem;
+      font-weight: 400;
+      line-height: 1.75rem;
+    }
+  }
+
+  &__buttons {
+    height: 3.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.875rem;
+
+    .app__store {
+      height: 3.4rem;
+      width: 11.15rem;
+      display: flex;
+      flex-direction: row;
+      gap: 0.625rem;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      border: 0.0625rem solid transparent;
+      border-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.1)
+      ) 1;
+      background: none;
+      border-radius: 0.25rem;
+      text-align: center;
+      margin-bottom: 2px;
+      transition: background 0.3s ease;
+      transition: transform 0.3s ease-in-out;
+      .app__store-text {
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.75rem;
+        margin: 0;
+        color: white;
+      }
+
+      img {
+        margin-left: -0.125rem;
+      }
+    }
+
+    .app__qr {
+      width: 4.85rem;
+      height: 3.4rem;
+      margin-bottom: 2px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 0.0625rem solid transparent;
+      border-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.1)
+      ) 1;
+    }
+  }
+  &__store:hover{
+        background-color: rgba($color: #000000, $alpha: 0.2);
+        transition: background-color 0.3s ease-in-out;
+        transform: scale(1.1);
+        box-shadow: 0px 0px 7px 1px rgba(255, 255, 255, 0.2);
+  }
+  &__qr:hover{
+        background-color: rgba($color: #000000, $alpha: 0.2);
+        transition: background-color 0.3s ease-in-out;
+        transform: scale(1.1);
+        box-shadow: 0px 0px 7px 1px rgba(255, 255, 255, 0.2);
+  }
+
+  &__image {
+    overflow: hidden;
+    margin-top: 3.375rem;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+}

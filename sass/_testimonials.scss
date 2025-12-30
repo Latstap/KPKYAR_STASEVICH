@@ -1,0 +1,136 @@
+.Testimonials {
+  padding: 120px 165px;
+  align-items: center;
+  .background {
+    left: -1px;
+    width: 1921px;
+  }
+  .blueblur {
+    top: 100px;
+    height: 647px;
+    filter: blur(120px);
+    opacity: 4%;
+  }
+  .back {
+    background-color: #1e1f25;
+  }
+  .testimonials__feedback {
+  display: flex;
+  flex-direction: column;
+  
+  &-text {
+    height: 9.125rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+    .testimonials__title {
+      margin: 0;
+      font-size: 3.625rem;
+      font-weight: 700;
+      color: white;
+      width: 40.3125rem;
+      letter-spacing: -0.0125rem;
+    }
+
+    .testimonials__description {
+      font-size: 1.125rem;
+      font-weight: 400;
+      color: #adb3bf;
+      width: 57.1875rem;
+      line-height: 1.75rem;
+    }
+  }
+
+
+
+  .feedback_content {
+    overflow: hidden;
+    width: 1590px;
+    .carousel_feedback {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      transition: transform 0.5s ease-in-out;
+      .feedback_card {
+        min-width: 645px;
+        height: 326px;
+        border-radius: 10px;
+        background-color: #272a34;
+        .user {
+          margin-top: 39px;
+          margin-left: 29px;
+          display: flex;
+          flex-direction: row;
+          width: 585px;
+          gap: 20px;
+          align-items: center;
+          .user_main {
+            width: 401px;
+            display: flex;
+            flex-direction: column;
+            h6 {
+              margin: 0;
+              font-size: 20px;
+              font-weight: 600;
+              color: white;
+            }
+            p {
+              margin: 0;
+              font-size: 14px;
+              font-weight: 400;
+              color: #bfc4cd;
+            }
+            .country {
+              margin-top: 4px;
+            }
+          }
+          .user_icon {
+            width: 72px;
+            height: 72px;
+            background-image: url(../img/iconman.png);
+          }
+          .comment_img {
+            width: 72px;
+            height: 72px;
+            background-image: url(../img/stroke.png);
+          }
+        }
+        .comment {
+          width: 585px;
+          margin-left: 29px;
+          margin-top: 30px;
+          h4 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 400;
+            color: white;
+            line-height: 36px;
+          }
+        }
+      }
+    }
+    .carousel_indicators {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      gap: 8px;
+      margin-left: -6px;
+    }
+    .carousel_indicators span {
+      width: 30px;
+      height: 4px;
+      background-color: white;
+      opacity: 0.04;
+      cursor: pointer;
+      transition: background-color 0.5s ease-in-out;
+    }
+    .carousel_indicators span.active {
+      opacity: 1;
+      width: 40px;
+      background-color: #cfd3da;
+      /* активная точка */
+    }
+  }
+}

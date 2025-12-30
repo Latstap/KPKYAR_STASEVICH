@@ -1,0 +1,106 @@
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow-y: hidden;
+  .container {
+    max-width: 99.375rem;
+    margin: 0;
+  }
+}
+.error-404 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.125rem;
+  margin: 0;
+  padding: 0;
+  padding: 4rem 8rem;
+  color: #fff;
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    max-width: 1920px;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  .back {
+    background-color: #1a1a1a;
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  .noise {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/backgroundnoise.png);
+    opacity: 8%;
+  }
+
+  .blueblur {
+    position: absolute;
+    top: 13.75rem;
+    height: 37.5rem;
+    width: 100%;
+    border-radius: 50%;
+    background-color: #ff4c4c;
+    opacity: 30%;
+    filter: blur(11.25rem);
+  }
+
+  .error-content {
+    max-width: 1590px;
+    
+    h1 {
+      font-size: 10rem;
+      margin-bottom: 1rem;
+      color: #ff4c4c;
+      text-shadow: 0 0 0.3125rem #ffffff, 0 0 0.6125rem #ff4c4c,
+        0 0 0.8125rem #ffffff, 0 0 1.125rem #ff4c4c;
+    }
+
+    p {
+      font-size: 3.25rem;
+      margin-bottom: 2rem;
+      color: #ccc;
+      max-width: 800px;
+      text-shadow: 0 0 1rem #ffffff;
+    }
+
+    .error-button {
+      background-color: #ff4c4c;
+      width: 200px;
+      height: 60px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0px 0px 15px 1px rgba(255, 255, 255, 0.5) inset;
+      transition: transform 0.3s ease-in-out;
+      cursor: pointer;
+      a{
+        text-decoration: none;
+        color: #fff;
+        text-shadow: 0 0 10px #000000;
+      }
+    }
+    .error-button:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .error-visual {
+    img {
+      position: absolute;
+      right: 2rem;
+      top: -5rem;
+      max-width: 1200px;
+      width: 100%;
+      filter: drop-shadow(0 0 10px #ff4c4c);
+    }
+  }
+}

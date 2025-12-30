@@ -1,0 +1,132 @@
+@charset "UTF-8";
+.Testimonials {
+  padding: 120px 165px;
+  align-items: center;
+}
+.Testimonials .background {
+  left: -1px;
+  width: 1921px;
+}
+.Testimonials .blueblur {
+  top: 100px;
+  height: 647px;
+  filter: blur(120px);
+  opacity: 4%;
+}
+.Testimonials .back {
+  background-color: #1e1f25;
+}
+.Testimonials .testimonials__feedback {
+  display: flex;
+  flex-direction: column;
+}
+.Testimonials .testimonials__feedback-text {
+  height: 9.125rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.Testimonials .testimonials__feedback .testimonials__title {
+  margin: 0;
+  font-size: 3.625rem;
+  font-weight: 700;
+  color: white;
+  width: 40.3125rem;
+  letter-spacing: -0.0125rem;
+}
+.Testimonials .testimonials__feedback .testimonials__description {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #adb3bf;
+  width: 57.1875rem;
+  line-height: 1.75rem;
+}
+.Testimonials .feedback_content {
+  overflow: hidden;
+  width: 1590px;
+}
+.Testimonials .feedback_content .carousel_feedback {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  transition: transform 0.5s ease-in-out;
+}
+.Testimonials .feedback_content .carousel_feedback .feedback_card {
+  min-width: 645px;
+  height: 326px;
+  border-radius: 10px;
+  background-color: #272a34;
+}
+.Testimonials .feedback_content .carousel_feedback .feedback_card .user {
+  margin-top: 39px;
+  margin-left: 29px;
+  display: flex;
+  flex-direction: row;
+  width: 585px;
+  gap: 20px;
+  align-items: center;
+}
+.Testimonials .feedback_content .carousel_feedback .feedback_card .user .user_main {
+  width: 401px;
+  display: flex;
+  flex-direction: column;
+}
+.Testimonials .feedback_content .carousel_feedback .feedback_card .user .user_main h6 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+.Testimonials .feedback_content .carousel_feedback .feedback_card .user .user_main p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #bfc4cd;
+}
+.Testimonials .feedback_content .carousel_feedback .feedback_card .user .user_main .country {
+  margin-top: 4px;
+}
+.Testimonials .feedback_content .carousel_feedback .feedback_card .user .user_icon {
+  width: 72px;
+  height: 72px;
+  background-image: url(../img/iconman.png);
+}
+.Testimonials .feedback_content .carousel_feedback .feedback_card .user .comment_img {
+  width: 72px;
+  height: 72px;
+  background-image: url(../img/stroke.png);
+}
+.Testimonials .feedback_content .carousel_feedback .feedback_card .comment {
+  width: 585px;
+  margin-left: 29px;
+  margin-top: 30px;
+}
+.Testimonials .feedback_content .carousel_feedback .feedback_card .comment h4 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  color: white;
+  line-height: 36px;
+}
+.Testimonials .feedback_content .carousel_indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 8px;
+  margin-left: -6px;
+}
+.Testimonials .feedback_content .carousel_indicators span {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  opacity: 0.04;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+}
+.Testimonials .feedback_content .carousel_indicators span.active {
+  opacity: 1;
+  width: 40px;
+  background-color: #cfd3da;
+  /* активная точка */
+}

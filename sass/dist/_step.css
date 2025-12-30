@@ -1,0 +1,68 @@
+.Simple_step {
+  height: 933px;
+  padding: 0 165px;
+  display: flex;
+  flex-direction: column;
+  background-color: #1E1F25;
+  align-items: center;
+}
+.Simple_step .Simple_text {
+  width: 1050px;
+  margin-top: 119px;
+  color: white;
+  text-align: center;
+}
+.Simple_step .Simple_text .text_header {
+  margin-bottom: 30px;
+}
+.Simple_step .Simple_text .text_header h1 {
+  margin: 0;
+  margin-left: -1px;
+  font-size: 58px;
+  font-weight: 700;
+  letter-spacing: -0.1px;
+}
+.Simple_step .Simple_text p {
+  font-size: 18px;
+  line-height: 28px;
+}
+.Simple_step .Simple_text .text_main {
+  margin-bottom: 20px;
+}
+.Simple_step .section__line {
+  margin: 24px 0 58px;
+  height: 1px;
+}
+.Simple_step .Cards {
+  margin-top: 17px;
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
+}
+.Simple_step .Cards .Card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0px;
+  background-color: #272A34;
+  width: 375px;
+  border: 0px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  gap: 38px;
+}
+.Simple_step .Cards .Card p {
+  color: #ADB3BF;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 24px;
+  width: 280px;
+}
+.Simple_step .Cards .Card h5 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 23px;
+}

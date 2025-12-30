@@ -1,0 +1,119 @@
+.simple-step {
+  padding: 0 0 7.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .back {
+    background-color: #1e1f25;
+  }
+  .blueblur {
+    opacity: 6%;
+    filter: blur(7.5rem);
+    top: 10.625rem;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7.4375rem;
+    color: white;
+    text-align: center;
+    gap:1.93rem;
+    &__header {
+      margin-bottom: 1.875rem;
+    }
+      .simple-step__title {
+        margin: 0;
+        margin-left: -0.0625rem;
+        font-size: 3.625rem;
+        font-weight: 700;
+        letter-spacing: -0.00625rem;
+      }
+    
+
+    .simple-step__description {
+      font-size: 1.125rem;
+      font-weight: 400;
+      line-height: 1.75rem;
+      color: #adb3bf;
+      margin: 0;
+      width: 65.625rem;
+    }
+  }
+
+  &__line {
+    margin: 1.5rem 0 3.625rem;
+    height: 0.0625rem;
+  }
+
+  &__cards {
+    display: flex;
+    gap: 1.875rem;
+    flex-direction: row;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.75rem 0 4rem;
+    background-color: #272a34;
+    width: 23.4375rem;
+    border: 0;
+    border-radius: 0.625rem;
+    color: white;
+    text-align: center;
+    gap: 2.375rem;
+    transition: transform 0.3s ease-in-out;
+    transition: background 0.5s linear;
+  }
+  &__card:hover{
+    transform: scale(1.05);
+    transition: background-color 0.5s linear;
+    background-color: #30333d;
+    box-shadow: 0px 5px 10px 2px rgba(255, 255, 255, 0.3) inset;
+  }
+  &__info {
+    margin-bottom: 0.375rem;
+    .simple-step__text {
+      color: #adb3bf;
+      font-size: 1rem;
+      font-weight: 400;
+      margin: 0;
+      line-height: 1.5rem;
+      width: 17.5rem;
+      text-indent: -0.1875rem;
+    }
+
+    .simple-step__subtitle {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1.4375rem;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 0.25rem;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: $basic-font;
+    font-size: 1rem;
+    font-weight: 400;
+
+    .simple-step__button-text {
+      color: white;
+      padding: 0;
+      width: auto;
+      margin-right: 0.5625rem;
+    }
+  }
+}
